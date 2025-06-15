@@ -9,7 +9,8 @@ To switch database:
 \c database_name
 
 Table exists in database:
-\d  d for describe
+\d  d for describe and this show along with sequence
+\dt this show without sequence
 
 To view particular table:
 \d table_name
@@ -54,3 +55,21 @@ DROP DATABASE database_name;
 DROP TABLE table_name;
 ```
 
+### Insert Data Into Table
+```js
+INSERT INTO table_name(
+    column_name
+)
+VALUES('values')
+
+Eg:
+INSERT INTO person (
+    first_name,
+    last_name,
+    gender,
+    date_of_birth,
+    email
+)
+VALUES('Leo', 'Das', 'male', date '1999-01-01', 'riyas@gmail.com');
+
+```
