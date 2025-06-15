@@ -1,6 +1,6 @@
 # Postgres Basics
 
-### Checking command
+### Basic commands
 ```js
 Database exists:
 \l
@@ -46,3 +46,11 @@ CREATE TABLE person (
     );
 
 ```
+
+### Drop Database & Table
+```js
+DROP DATABASE database_name;
+
+DROP TABLE table_name;
+```
+
